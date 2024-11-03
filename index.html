@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisy Architect</title>
+
+     <!-- Google font CDN -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- daisy usi script -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- font woasome icone  -->
+<script src="https://kit.fontawesome.com/79a0d414ab.js" crossorigin="anonymous"></script>
+
+<style>
+    .font-manrop{
+        font-family: "Manrope", sans-serif;
+    }
+</style>
+    
+<!-- tailwind css script  -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bike-primary': '#E76F51',
+            'bike-primary-bg': '#E76F511A',
+            
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-manrop bg-slate-50">
+    <header class=" container  lg:w-[1380px] mx-auto ">
+         <!-- navber -->
+          <nav>
+            <div class="navbar   flex justify-between">
+                <!-- Left side: Logo -->
+                <div class="navbar-start">
+                  <a class="btn btn-ghost  "> <span class="w-8 text-xl h-8 rounded-full bg-[#c2f28c]"><i class="fa-solid fa-arrow-right-long -rotate-45"></i> </span><span class=" text-4xl font-bold"> Rinterio</span></a>
+                </div>
+              
+                <!-- Center menu for large devices -->
+                <div class="navbar-center hidden lg:flex justify-center">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class=" text-[#494949] font-bold"><a>Home</a></li>
+                    <li>
+                     <a > Services</a>
+                    </li>
+                    <li><a> Portfolio</a></li>
+                    <li><a> Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+              
+                <!-- Right side: Button and dropdown for small screens -->
+                <div class="navbar-end lg:hidden flex">
+                   
+                  <div tabindex="0" class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </label>
+                    <ul class="menu dropdown-content bg-base-100 rounded-box mt-3 shadow">
+                        <ul class="menu menu-horizontal px-1">
+                            <li class=" text-[#494949] font-bold"><a>Home</a></li>
+                            <li>
+                             <a > Services</a>
+                            </li>
+                            <li><a> Portfolio</a></li>
+                            <li><a> Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                          </ul>
+                    </ul>
+                  </div>
+                </div>
+              
+                <!-- Right side: Button for large devices (hidden on small screens) -->
+                <div class="navbar-end hidden lg:flex">
+                  <div class=" bg-white rounded-full mx-1 w-12 h-12" ><i class="text-2xl px-[26%] py-[22%]
+                    justify-center fa-solid fa-magnifying-glass"></i></div>
+                  <div class=" bg-white rounded-full mx-2 w-12 h-12" ><i class="text-2xl px-[26%] py-[22%] fa-solid fa-cart-shopping"></i></div>
+                  
+                  <div class="bg-[#ABEF5F] px-3 py-2 rounded-full"> Book Consult <span class="mx-2 w-8 px-1 text-xl h-8 rounded-full bg-black"><i class="fa-solid text-white fa-arrow-right-long -rotate-45"></i> </span> </div>
+                  
+                </div>
+              </div>
+              
+              
+          </nav>
+
+          <!-- banner section -->
+           <section>
+            <div class="hero   min-h-screen">
+                <div class="hero-content text-center">
+                  <div class=" max-w-md  md:max-w-2xl">
+                    <img src="./assets/banner.png" alt="">
+                    <h1 class="text-5xl font-bold">A barn house of this design has a striking appearance</h1>
+                    <p class="py-6">
+                        Architecture is the art of shaping environments that inspire and transform lives. Every design tells a story, where creativity blends with technical precision to create spaces.
+                    </p>
+                    <div class=" btn bg-gradient-to-r from-[#bbd89a] to-[#bbeb85] px-3 py-2 rounded-full"> Book Consult <span class="mx-2 w-8 px-1 text-xl h-8 rounded-full bg-[#8cd735]"><i class="fa-solid text-white fa-arrow-right-long -rotate-45"></i> </span> </div>
+                  </div>
+                </div>
+              </div>
+           </section>
+    </header>
+    <main class="md:container mx-auto  bg-slate-200">
+
+        <!-- we design section -->
+        <section class=" py-24 sm:w-full sm:px-auto mt-24">
+         <div class="lg:px-24   ">
+            <img class="hidden lg:block" src="./assets/Vector.png" alt=""> 
+            <div>
+
+                <div class="hero    ">
+                    <div class="hero-content flex-col-reverse lg:flex-row-reverse">
+                      <div class="lg:w-[50%]">
+                        <img class=" w-full" src="assets/Rectangle.png" class="max-w-sm rounded-lg shadow-2xl" />
+                      </div>
+                      <div class="lg:w-[50%] ">
+                        <button class="btn rounded-full mb-5"><a class="btn btn-ghost  ">  <i class="fa-solid fa-arrow-right-long "></i>  <span class="   font-bold"> About Us</span></a></button>
+                        <h1 class="text-5xl font-bold">We design thoughtful, liveable spaces</h1>
+                        <p class="py-6">
+                            At the heart of our design philosophy is creating spaces that are both functional and inspiring. We focus on thoughtful layouts that enhance everyday living, ensuring each space feels welcoming and intuitive.
+                        </p>
+                        <!-- card  2 card -->
+                        <div class=" space-y-4">
+                            <div class="card bg-base-100  shadow-xl">
+                                <div class="card-body">
+                                 <div class="flex items-center gap-3">
+                                    <div><img src="./assets/commercial.png" alt=""></div>
+                                 <div> <h2 class="card-title">Commercial</h2>
+                                    <p>We create innovative commercial spaces that drive productivity and leave a lasting impression</p></div>
+                                 </div>
+                                   
+                                </div>
+                              </div>
+                              
+                            <div class="card bg-base-100   shadow-xl">
+                                <div class="card-body">
+                                    <div class="flex items-center gap-3 ">
+                                        <div><img src="./assets/residential.png" alt=""></div>
+                                     <div> <h2 class="card-title">Residential</h2>
+                                        <p>Designing personalized residential spaces that reflect your lifestyle and provide lasting comfort</p></div>
+                                     </div>
+                                  
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+            </div>
+         </div> 
+        </section>
+
+
+        <!-- card section  -->
+
+        <section>
+            <h3 class="text-2xl font-bold text-center mb-2">Our Works Process</h3>
+            <p class="    text-center mb-2">Our works process is built on a foundation of collaboration and creativity, ensuring that <br> every project is tailored to  meet our clients' unique needs. We prioritize clear communication <br> and meticulous planning at every stage</p>
+            <!-- cards  -->
+             <!-- <div class="grid grid-cols-1 gap-3 md:grid-cols-2 mt-12 lg:grid-cols-4"> -->
+            <div class="lg:w-[1170px]    mx-auto mt-12  ">
+                <div class="grid grid-cols-1   lg:grid-cols-4   gap-2   ">
+                    <!-- Card 1 -->
+                            
+                <div class="card bg-[#E7C1D3] text-primary-content w-64 mx-auto ">
+                <div class="card-body">
+                   <img class="w-10" src="./assets/concept.png" alt="">
+                   <h1 class="text-black text-xl font-bold">Concept</h1>
+                  <p class=" text-black">Our design concept revolves around harmonizing aesthetics with functionality,   </p>
+                   
+                </div>
+              </div>
+            
+              <!-- Card 2 -->
+              <div class="card bg-[#EFDA6E] text-primary-content w-64 mx-auto">
+                <div class="card-body">
+                    <img class="w-10" src="./assets/flow-chart.png" alt="">
+                    <h1 class="text-black text-xl font-bold">Design Process</h1>
+                   <p class=" text-black">Our design process is a collaborative journey that transforms ideas into   </p>
+                </div>
+              </div>
+            
+              <!-- Card 3 -->
+              <div class="card bg-[#A4DAC3] text-primary-content w-64 mx-auto">
+                <div class="card-body">
+                    <img class="w-10" src="./assets/vision.png" alt="">
+                    <h1 class="text-black text-xl font-bold">Supervision</h1>
+                   <p class=" text-black">Our supervision ensures that every project detail is executed flawlessly, maintaining high standards </p>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="card bg-[#77AAEA] text-primary-content w-64 mx-auto">
+                <div class="card-body">
+                    <img class="w-10" src="./assets/budget-planning.png" alt="">
+                    <h1 class="text-black text-xl font-bold">Budget Planning</h1>
+                   <p class=" text-black">We prioritize transparent budget planning to maximize value while ensuring that projects are completed </p>
+                </div>
+              </div>
+                            
+            </div>
+            </div>
+
+        </section>
+
+
+
+<!-- our latest portfolio -->
+        <section class="lg:w-[1400px] w-[450px] mx-auto ">
+            <h1>this is testing perpose </h1>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
